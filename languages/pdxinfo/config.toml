@@ -1,0 +1,6 @@
+name = "PDXInfo"
+grammar = "pdxinfo"
+path_suffixes = ["pdxinfo"]
+line_comments = ["#"]
+tab_size = 2
+hard_tabs = false

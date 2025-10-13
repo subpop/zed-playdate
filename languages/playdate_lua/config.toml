@@ -1,0 +1,7 @@
+name = "Playdate Lua"
+grammar = "playdate_lua"
+path_suffixes = ["lua"]
+line_comments = ["--"]
+block_comment = ["--[[", "]]"]
+tab_size = 2
+hard_tabs = false

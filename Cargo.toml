@@ -1,0 +1,15 @@
+[package]
+name = "zed-playdate"
+version = "0.1.0"
+edition = "2021"
+publish = false
+license = "MIT"
+authors = ["Link Dupont <link@sub-pop.net>"]
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+serde = "1.0.228"
+serde_json = "1.0.145"
+zed_extension_api = "0.7.0"

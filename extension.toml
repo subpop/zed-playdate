@@ -1,0 +1,31 @@
+id = "playdate"
+name = "Playdate"
+schema_version = 1
+version = "0.1.0"
+authors = ["Link Dupont <link@sub-pop.net>"]
+description = "Playdate Simulator debugging with LuaCATS type definitions"
+repository = "https://github.com/subpop/zed-playdate"
+
+[grammars.pdxinfo]
+repository = "https://github.com/notpeter/tree-sitter-pdxinfo"
+commit = "f53aa27c0f93c0b89367894c8858528cf0b85e81"
+
+[grammars.animationtxt]
+repository = "https://github.com/notpeter/tree-sitter-animationtxt"
+commit = "d7947cdcc94fbad7a2436053572552adf471fc9b"
+
+[grammars.playdate_lua]
+repository = "https://github.com/subpop/tree-sitter-playdate-lua"
+commit = "5ded04886898a9896c58a9fd67613e94b7d7a0a3"
+
+[language_servers.playdate-lua-language-server]
+name = "Playdate Lua Language Server"
+languages = ["Playdate Lua"]
+
+[debug_adapters.Playdate]
+schema_path = "debug_adapter_schemas/Playdate.json"
+
+[[capabilities]]
+kind = "process:exec"
+command = "/usr/local/bin/pdc"
+args = ["--version"]

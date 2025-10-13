@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "request": {
+      "type": "string",
+      "enum": ["launch", "attach"],
+      "description": "The request type of this launch configuration. Must be either 'launch' or 'attach'."
+    },
+    "label": {
+      "type": "string",
+      "description": "An optional name for the launch configuration. This name is used to identify the configuration in the UI."
+    },
+    "gamePath": {
+      "type": "string",
+      "description": "Path to game source code",
+      "default": "$ZED_WORKTREE_ROOT/builds/Game.pdx"
+    },
+    "sdkPath": {
+      "type": "string",
+      "description": "Path to Playdate SDK"
+    },
+    "sourcePath": {
+      "type": "string",
+      "description": "Path to Playdate source code",
+      "default": "$ZED_WORKTREE_ROOT/source"
+    }
+  },
+  "required": ["request", "label"]
+}

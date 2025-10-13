@@ -1,0 +1,6 @@
+name = "AnimationTXT"
+grammar = "animationtxt"
+path_suffixes = ["txt"]
+line_comments = ["#"]
+tab_size = 2
+hard_tabs = false
